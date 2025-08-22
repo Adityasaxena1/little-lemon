@@ -11,7 +11,7 @@ a{
 
 body{
     background-color: azure;
-    margin: 2rem 5%;
+    margin-top:2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -21,10 +21,12 @@ header img {
     margin-bottom:1.25rem;
 }
 
+
+/* navbar */
 nav {
     background-color: #064232;
-    border-radius: 10px;
 }
+
 nav ul {
     display: flex;
     justify-content: center;
@@ -36,18 +38,74 @@ nav ul li {
     
 }
 
+
+
+/* promotional banner section */
+
+.promotional-banner{
+    margin:2rem;
+    position: relative;
+}
+.promotional-banner img {
+    width:100%;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+h1{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size:3rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+/* three column section */
+.three-column {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin:2rem;
+    gap:1rem;
+}
+
+.three-column >* {
+    background-color: #CADCAE;
+    padding:1rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.three-column >*:hover {
+    transform: scale(1.1);
+    transition: 0.4s linear;
+
+}
+
+
+.three-column img {
+    width:100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+
+/* dishes section */
 .dishes-section {
     display:grid;
     grid-template-columns: 1fr 1fr;
     gap:1rem;
-    margin-top: 2rem;
+    margin:2rem;
     background-color: #CADCAE;
     padding:1.5rem;
     border-radius: 10px;
 
 }
 
-h1{
+h2{
     font-size: 2rem;
     color:#17313E;
     font-family: 'Courier New', Courier, monospace;
@@ -92,7 +150,8 @@ footer{
     margin-top:2rem;
     background-color: #064232;
     padding:2rem;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 
 }
 .copyright {
